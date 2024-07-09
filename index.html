@@ -236,21 +236,42 @@
                             </label>
                         </div>
                         <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="webhook_events" name="webhook_events[]" value="SUBSCRIPTION_NOTIFICATION_COMPLETED">
+                            <label class="form-check-label" for="webhook_events">
+                                SUBSCRIPTION_NOTIFICATION_COMPLETED
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="webhook_events" name="webhook_events[]" value="SUBSCRIPTION_NOTIFICATION_FAILED">
+                            <label class="form-check-label" for="webhook_events">
+                                SUBSCRIPTION_NOTIFICATION_FAILED
+                            </label>
+                        </div>
+                        <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="webhook_events" name="webhook_events[]" value="SUBSCRIPTION_REDEMPTION_ORDER_COMPLETED">
                             <label class="form-check-label" for="webhook_events">
                                 SUBSCRIPTION_REDEMPTION_ORDER_COMPLETED
                             </label>
                         </div>
+
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="webhook_events" name="webhook_events[]" value="SUBSCRIPTION_REDEMPTION_ORDER_FAILED">
                             <label class="form-check-label" for="webhook_events">
                                 SUBSCRIPTION_REDEMPTION_ORDER_FAILED
                             </label>
                         </div>
+
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="webhook_events" name="webhook_events[]" value="SUBSCRIPTION_REDEMPTION_TRANSACTION_ATTEMPT_FAILED">
+                            <input class="form-check-input" type="checkbox" id="webhook_events" name="webhook_events[]" value="SUBSCRIPTION_REDEMPTION_TRANSACTION_COMPLETED">
                             <label class="form-check-label" for="webhook_events">
-                                SUBSCRIPTION_REDEMPTION_TRANSACTION_ATTEMPT_FAILED
+                                SUBSCRIPTION_REDEMPTION_TRANSACTION_COMPLETED
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="webhook_events" name="webhook_events[]" value="SUBSCRIPTION_REDEMPTION_TRANSACTION_FAILED">
+                            <label class="form-check-label" for="webhook_events">
+                                SUBSCRIPTION_REDEMPTION_TRANSACTION_FAILED
                             </label>
                         </div>
                         <div class="form-check">
@@ -263,6 +284,20 @@
                             <input class="form-check-input" type="checkbox" id="webhook_events" name="webhook_events[]" value="SUBSCRIPTION_PAUSED">
                             <label class="form-check-label" for="webhook_events">
                                 SUBSCRIPTION_PAUSED
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="webhook_events" name="webhook_events[]" value="SUBSCRIPTION_UNPAUSED">
+                            <label class="form-check-label" for="webhook_events">
+                                SUBSCRIPTION_UNPAUSED
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="webhook_events" name="webhook_events[]" value="SUBSCRIPTION_REVOKED">
+                            <label class="form-check-label" for="webhook_events">
+                                SUBSCRIPTION_REVOKED
                             </label>
                         </div>
 
