@@ -434,14 +434,16 @@
                                 "authorization": "O-Bearer "+response.access_token+""
                             },
                             "data": JSON.stringify({
-                                "webhookConfigs": [
-                                {
-                                    "type": "HTTP",
-                                    "webhookTypes": webhook_events,
-                                    "url": callbackUrl,
-                                    "username": username,
-                                    "password": password
-                                }
+                                "webhooks": [
+                                    {
+                                        "channel": {
+                                            "type": "HTTPS",
+                                            "password": password,
+                                            "username": username,
+                                            "url": callbackUrl
+                                        },
+                                        "events": webhook_events
+                                    },
                                 ]
                             }),
                         };
